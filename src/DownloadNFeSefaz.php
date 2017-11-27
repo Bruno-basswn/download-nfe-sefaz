@@ -137,8 +137,8 @@ class DownloadNFeSefaz {
 
             // Verifica se o certificado existe na pasta
             if (!file_exists($this->pathCertsFiles . $this->CNPJ . '_priKEY.pem') ||
-                    !file_exists($this->pathCertsFiles . $this->CNPJ . '_priKEY.pem') ||
-                    !file_exists($this->pathCertsFiles . $this->CNPJ . '_priKEY.pem')) {
+                    !file_exists($this->pathCertsFiles . $this->CNPJ . '_certKEY.pem') ||
+                    !file_exists($this->pathCertsFiles . $this->CNPJ . '_pubKEY.pem')) {
                 throw new Exception('Certificado digital não encontrado na pasta: ' . $this->pathCertsFiles . '!');
             }
 
